@@ -1,0 +1,97 @@
+ #inv {
+ 	background: #cccccc;
+ }
+ .buttonNormal {
+ 	display: block !important;
+ 	width: 48px;
+ 	height: 30px;
+ 	padding: 5px;
+ 	border-radius: 2px;
+ 	font-family: "Arial";
+ 	border: 0;
+ 	margin: 2px;
+ 	background: #cccccc;
+ 	font-size: 16px;
+ 	line-height: 15px;
+ 	color: #000000;
+ 	box-sizing: content-box;
+ 	cursor: pointer;
+ }
+ .displayNormal {
+ 	width: 655px;
+ 	height: 30px;
+ 	text-align: right;
+ 	font-size: 16px;
+ }
+ .displayNormal {
+ 	width: 655px;
+ 	height: 30px;
+ 	text-align: right;
+ 	font-size: 16px;
+ }
+ .displayAns {
+ 	width: 655px;
+ 	height: 30px;
+ 	text-align: right;
+ 	font-size: 30px;
+ 	font-family: Adobe Caslon Pro Bold;
+ }
+ .subAdd {
+ 	display: block !important;
+ 	width: 48px;
+ 	height: 30px;
+ 	padding: 5px;
+ 	border-radius: 2px;
+ 	font-family: "Arial";
+ 	border: 0;
+ 	margin: 2px;
+ 	background: #cccccc;
+ 	font-size: 25px;
+ 	line-height: 15px;
+ 	color: #000000;
+ 	box-sizing: content-box;
+ 	cursor: pointer;
+ }
+ .equal {
+ 	width: 48px;
+ 	height: 78px;
+ 	padding: 5px;
+ 	display: block !important;
+ 	border-radius: 2px;
+ 	font-family: "Arial";
+ 	border: 0;
+ 	margin: 2px;
+ 	background: #cccccc;
+ 	font-size: 16px;
+ 	line-height: 15px;
+ 	color: #000000;
+ 	box-sizing: content-box;
+ 	cursor: pointer;
+ }
+ .zero {
+ 	width: 114px;
+ 	height: 30px;
+ 	padding: 5px;
+ 	display: block !important;
+ 	border-radius: 2px;
+ 	font-family: "Arial";
+ 	border: 0;
+ 	margin: 2px;
+ 	background: #cccccc;
+ 	font-size: 16px;
+ 	line-height: 15px;
+ 	color: #000000;
+ 	box-sizing: content-box;
+ 	cursor: pointer;
+ }
+ .timerDigits {
+ 	font-size: 40px;
+ 	font-family: 'Calibri (Body)';
+ }
+ .ampm {
+ 	font-size: 20px;
+ 	font-family: 'Arial Black';
+ }
+ .hide {
+ 	visibility: hidden;
+ }
