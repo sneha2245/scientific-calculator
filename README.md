@@ -1,5 +1,7 @@
 # Scientific Calculator
 
+https://sneha2245.github.io/scientific-calculator/
+
 •	Duration : 3 month.
 
 •	Technologies / Tools Used : HTML, CSS, JavaScript, NetBeans , Glassfish .
