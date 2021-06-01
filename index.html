@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setDate();setTime();">
+	<div>
+		<div> <span id="hh" class="timerDigits"></span>
+			<span id="colon1" class="timerDigits">:</span>
+			<span id="mm" class="timerDigits"></span>
+			<span id="colon2" class="timerDigits">:</span>
+			<span id="ss" class="timerDigits"></span>
+			<span id="ltr" class="ampm"></span>
+		</div>
+		<div> <span id="day" class="timerDigits"></span>
+		</div>
+		<div> <span id="DD" class="timerDigits"></span>
+			<span class="timerDigits">/</span>
+			<span id="MM" class="timerDigits"></span>
+			<span class="timerDigits">/</span>
+			<span id="YY" class="timerDigits"></span>
+		</div>
+	</div>
+	<input type="checkbox" id="invStat" class="hide" />
+	<div style="border: 1px solid black;width:665px;margin: auto;">
+		<table>
+			<tr>
+				<td colspan="10">
+					<input class="displayNormal" type="text" id="sdisplay" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="10">
+					<input class="displayAns" type="text" id="bdisplay" />
+				</td>
+			</tr>
+			<tr>
+				<td><span class="buttonNormal" id="emp">&nbsp;</span>
+				</td>
+				<td><span class="buttonNormal" id="inv" onclick="inv();">Inv</span>
+				</td>
+				<td><span class="buttonNormal" id="ex" onclick="pressLn();">ln</span>
+				</td>
+				<td><span class="buttonNormal" id="p_open" onclick="pressFristBac();">(</span>
+				</td>
+				<td><span class="buttonNormal" id="p_close" onclick="pressSecondBac();">)</span>
+				</td>
+				<td><span class="buttonNormal" id="bkSp" onclick="pressBack();"><-</span>
+				</td>
+				<td><span class="buttonNormal" id="ce" onclick="pressCe();">CE</span>
+				</td>
+				<td><span class="buttonNormal" id="c" onclick="pressC();">C</span>
+				</td>
+				<td><span class="buttonNormal" id="plusMinus" onclick="pressAddOrSub();">+/-</span>
+				</td>
+				<td><span class="buttonNormal" id="root" onclick="pressRoot();">√</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="buttonNormal" id="frac" onclick="pressInt();">Int</span>
+				</td>
+				<td><span class="buttonNormal" id="sinh" onclick="pressSinh();">sinh</span>
+				</td>
+				<td><span class="buttonNormal" id="sin" onclick="pressSin();">sin</span>
+				</td>
+				<td><span class="buttonNormal" id="x2" onclick="pressX2();">x<sup>2</sup></span>
+				</td>
+				<td><span class="buttonNormal" id="nF" onclick="prsessNFactorial();">n!</span>
+				</td>
+				<td><span class="buttonNormal" id="number7" onclick="press7();">7</span>
+				</td>
+				<td><span class="buttonNormal" id="number8" onclick="press8();">8</span>
+				</td>
+				<td><span class="buttonNormal" id="number9" onclick="press9();">9</span>
+				</td>
+				<td><span class="buttonNormal" id="di" onclick="pressDiv();">/</span>
+				</td>
+				<td><span class="buttonNormal" id="per" onclick="pressPer();">%</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="buttonNormal" id="roothalf" onclick="pressRoothalf();">√(1/2)</span>
+				</td>
+				<td><span class="buttonNormal" id="cosh" onclick="pressCoshInv();">cosh</span>
+				</td>
+				<td><span class="buttonNormal" id="cos" onclick="pressCosInv();">cos</span>
+				</td>
+				<td><span class="buttonNormal" id="xy" onclick="pressXY();">x<sup>y</sup></span>
+				</td>
+				<td><span class="buttonNormal" id="y_root_X" onclick="pressYRootX();"><sup>y</sup>√x</span>
+				</td>
+				<td><span class="buttonNormal" id="number4" onclick="press4();">4</span>
+				</td>
+				<td><span class="buttonNormal" id="number5" onclick="press5();">5</span>
+				</td>
+				<td><span class="buttonNormal" id="number6" onclick="press6();">6</span>
+				</td>
+				<td><span class="subAdd" id="mul" onclick="pressMul();">*</span>
+				</td>
+				<td><span class="buttonNormal" id="1_by_x" onclick="press1ByX();">1/x</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="buttonNormal" id="pi" onclick="pressPie();">π</span>
+				</td>
+				<td><span class="buttonNormal" id="tanh" onclick="pressTanhInv();">tanh</span>
+				</td>
+				<td><span class="buttonNormal" id="tan" onclick="pressTanInv();">tan</span>
+				</td>
+				<td><span class="buttonNormal" id="x3" onclick="pressXPOwer3();">x<sup>3</sup></span>
+				</td>
+				<td><span class="buttonNormal" id="3_root_x" onclick="press3RootX();"><sup>3</sup>√x</span>
+				</td>
+				<td><span class="buttonNormal" id="number1" onclick="press1();">1</span>
+				</td>
+				<td><span class="buttonNormal" id="number2" onclick="press2();">2</span>
+				</td>
+				<td><span class="buttonNormal" id="number3" onclick="press3();">3</span>
+				</td>
+				<td><span class="subAdd" id="sub" onclick="pressSub();">-</span>
+				</td>
+				<td rowspan="2"><span class="equal" id="eqa" onclick="pressEqu();">=</span>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="buttonNormal" id="root2" onclick="pressRoot2();">√2</span>
+				</td>
+				<td><span class="buttonNormal" id="exp" onclick="pressExp();">Exp</span>
+				</td>
+				<td><span class="buttonNormal" id="mod" onclick="pressMod();">Mod</span>
+				</td>
+				<td><span class="buttonNormal" id="log" onclick="pressLog();">Log</span>
+				</td>
+				<td><span class="buttonNormal" id="10-x" onclick="pressTenPoewrX();">10<sup>x</sup></span>
+				</td>
+				<td colspan="2"><span class="zero" id="number0" onclick="press0();">0</span>
+				</td>
+				<td><span class="subAdd" id="dot" onclick="pressDot();">.</span>
+				</td>
+				<td><span class="subAdd" id="plus" onclick="pressAdd();">+</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
