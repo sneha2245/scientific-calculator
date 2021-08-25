@@ -12,7 +12,7 @@ https://sneha2245.github.io/scientific-calculator/
 
     __i.__	We have build a user friendly of a scientific calculator . The interface have a display and various buttons like sin, cos , numbers , operations etc.
   
-    __ii.__	There is a button named inverse which is used to show inverse of some buttons like ln to ex , sin to sin-1 , π to 2π and many more.
+    __ii.__	There is a button named inverse which is used to show inverse of some buttons like __`ln`__ to __`ex`__ , __`sin`__ to __`sin-1`__ , __`π`__ to __`2π`__ and many more.
 
 - __Features :__ Display date and time . 
 
